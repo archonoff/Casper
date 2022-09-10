@@ -77,7 +77,7 @@
             <nav class="site-footer-nav">
                 {{navigation type="secondary"}}
             </nav>
-            {{! <div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>}}
+            {{#if @custom.show_powered_by}}<div><a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a></div>{{/if}}
         </div>
     </footer>
 
