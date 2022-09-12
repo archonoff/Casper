@@ -171,7 +171,7 @@
             },
             "site_header_padding_top": {
                 "type": "text",
-                "default": "Site header padding-top"
+                "default": ""
             }
         }
     },
