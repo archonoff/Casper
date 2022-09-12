@@ -168,6 +168,10 @@
             "show_powered_by": {
                 "type": "boolean",
                 "default": false
+            },
+            "site_header_padding_top": {
+                "type": "text",
+                "default": "Site header padding-top",
             }
         }
     },
