@@ -13,14 +13,15 @@ into the {body} tag of the default.hbs template --}}
     <header class="article-header gh-canvas">
 
         <div class="article-tag post-card-tags">
-            {{#tags}}
-                <span class="post-card-tag">
+            {{#primary_tag}}
+                <span class="post-card-primary-tag">
                     <a href="{{url}}">{{name}}</a>
                 </span>
-            {{/tags}}
+            {{/primary_tag}}
             {{#if featured}}
                 <span class="post-card-featured">{{> "icons/fire"}} {{t "Featured"}}</span>
             {{/if}}
+            {{tags}}
         </div>
 
         <h1 class="article-title">{{title}}</h1>
