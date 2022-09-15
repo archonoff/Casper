@@ -21,7 +21,11 @@ into the {body} tag of the default.hbs template --}}
             {{#if featured}}
                 <span class="post-card-featured">{{> "icons/fire"}} {{t "Featured"}}</span>
             {{/if}}
-            {{tags}}
+            {{#foreach tags}}
+                <span class="post-card-tag">
+                    <a href="{{url}}">{{name}}</a>
+                </span>
+            {{/foreach}}
         </div>
 
         <h1 class="article-title">{{title}}</h1>
